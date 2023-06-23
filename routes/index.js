@@ -11,7 +11,7 @@ router.get("/contacto", (req, res) => {
 });
 
 router.get("/nosotros", (req, res) => {
-  res.send("Nosotros");
+  res.render("nosotros");
 });
 
 export default router;
