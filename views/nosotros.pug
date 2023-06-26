@@ -3,4 +3,28 @@ extends ./layout/index
 block contenido
     main.container.mt-5 
         .row 
-            h1 #{pagina}
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen nosotros", class='img-fluid')
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere morbi leo urna. Mi in nulla posuere sollicitudin. Orci sagittis eu volutpat odio facilisis. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. In ante metus dictum at tempor. 
+
+                p Et netus et malesuada fames ac turpis egestas sed tempus. Eu augue ut lectus arcu bibendum at varius vel pharetra. Auctor neque vitae tempus quam. Enim ut tellus elementum sagittis vitae. Mauris commodo quis imperdiet massa. Sapien eget mi proin sed. Scelerisque viverra mauris in aliquam sem. Massa tincidunt nunc pulvinar sapien. Fermentum dui faucibus in ornare quam viverra. Amet consectetur adipiscing elit duis tristique sollicitudin nibh.
+
+                p Blandit libero volutpat sed cras ornare arcu dui vivamus. Orci a scelerisque purus semper eget duis. Venenatis cras sed felis eget. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Et netus et malesuada fames. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum.
+    
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class='img-fluid mb-4')
+                    h2.mb-4 Seguridad 
+                    p Et netus et malesuada fames. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum.
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class='img-fluid mb-4')
+                    h2.mb-4 Destinos 
+                    p Et netus et malesuada fames. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum.
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono seguridad", class='img-fluid mb-4')
+                    h2.mb-4 Precios 
+                    p Et netus et malesuada fames. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum.
