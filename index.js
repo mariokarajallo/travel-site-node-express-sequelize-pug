@@ -1,7 +1,13 @@
 import express from "express";
 import router from "./routes/index.js";
+import db from "./config/db.js";
 
 const app = express();
+
+// conectar la base de datos local
+db.authenticate()
+  .then(() => console.log("Base de datos conectado"))
+  .catch((error) => console.log("este es el error:->", error));
 
 //definir puerto
 const port = process.env.PORT || 4000;
