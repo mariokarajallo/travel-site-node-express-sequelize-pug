@@ -30,7 +30,7 @@ const paginaDetalleViaje = async (req, res) => {
     const viaje = await Viaje.findOne({ where: { slug: slug } });
     res.render("viaje", {
       pagina: "Informacion del viaje",
-      resultado,
+      viaje,
     });
   } catch (error) {
     console.log(error);
