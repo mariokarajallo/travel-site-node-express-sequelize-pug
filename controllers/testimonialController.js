@@ -12,7 +12,7 @@ const guardarTestimonial = (req, res) => {
     errores.push({ mensaje: "El correo esta vacio" });
   }
   if (mensaje.trim() === "") {
-    errores.push({ mesanje: "El mensaje esta vacio" });
+    errores.push({ mensaje: "El mensaje esta vacio" });
   }
 
   if (errores.length > 0) {
