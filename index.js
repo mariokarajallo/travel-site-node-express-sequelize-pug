@@ -26,6 +26,9 @@ app.use((req, res, next) => {
 //definir la carpeta publica
 app.use(express.static("public"));
 
+//agregar BODY PARSER para leer los datos del formulario
+app.use(express.urlencoded({ extended: true }));
+
 // agregar Router
 app.use("/", router);
 
