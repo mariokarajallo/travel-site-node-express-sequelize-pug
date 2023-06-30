@@ -11,7 +11,6 @@ const db = new Sequelize(
     host: process.env.DB_HOST,
     port: "3306",
     dialect: "mysql",
-    dialectModule: "mysql2",
     define: {
       timestamps: false,
     },
