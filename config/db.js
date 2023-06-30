@@ -4,11 +4,11 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const db = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASS,
+  process.env.PLANETSCALE_DB,
+  process.env.PLANETSCALE_DB_USERNAME,
+  process.env.PLANETSCALE_DB_PASSWORD,
   {
-    host: process.env.DB_HOST,
+    host: process.env.PLANETSCALE_DB_HOST,
     port: "3306",
     dialect: "mysql",
     define: {
